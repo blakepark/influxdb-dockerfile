@@ -1,8 +1,8 @@
-FROM tutum/curl:trusty
+FROM cosmosio/curl:debian-jessie
 MAINTAINER Graham Lee <ghmlee@cosmos.io>
 
 # Install InfluxDB
-ENV INFLUXDB_VERSION 0.9.0-rc32
+ENV INFLUXDB_VERSION 0.9.0-rc31
 RUN curl -s -o /tmp/influxdb_latest_amd64.deb https://s3.amazonaws.com/influxdb/influxdb_${INFLUXDB_VERSION}_amd64.deb && \
   dpkg -i /tmp/influxdb_latest_amd64.deb && \
   rm /tmp/influxdb_latest_amd64.deb && \
