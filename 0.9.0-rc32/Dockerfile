@@ -1,4 +1,4 @@
-FROM cosmosio/curl:debian-jessie
+FROM tutum/curl:trusty
 MAINTAINER Graham Lee <ghmlee@cosmos.io>
 
 # Install InfluxDB
