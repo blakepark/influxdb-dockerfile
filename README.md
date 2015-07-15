@@ -19,10 +19,6 @@ Start your image binding the external ports `8083` and `8086` in all interfaces 
 
     docker run -d -p 8083:8083 -p 8086:8086 cosmosio/influxdb
 
-There's also a `0.9.0-rc` version available, which is **not** backwards compatible with `0.8.x`:
-
-	docker run -d -p 8083:8083 -p 8086:8086 cosmosio/influxdb:0.9.0-rc
-
 
 ## Configuring your InfluxDB
 
